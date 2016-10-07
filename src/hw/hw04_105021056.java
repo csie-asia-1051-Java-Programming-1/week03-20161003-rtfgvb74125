@@ -5,7 +5,7 @@ package hw;
  * Author: 105021056 王家恩
  */
 import java.util.Scanner;
-public class hw04_1050210XX {
+public class hw04_105021056 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

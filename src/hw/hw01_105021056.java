@@ -1,26 +1,24 @@
 package hw;
 /*
- * Topic: 讓使用者輸入一正整數n，用while迴圈計算n!後輸出。
+ * Topic: 輸入一個正整數值(不含 0)，傳回該數值是幾位數(# ofdigits)。
  * Date: 2016/10/03
  * Author: 105021056 王家恩
  */
 import java.util.Scanner;
-public class hw04_1050210XX {
+public class hw01_105021056 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		Scanner scn = new Scanner(System.in);
-		System.out.print("請輸入階層數:");
+		int sum = 0;
 		int v1 = scn.nextInt();
-		int sum = 1;
-		int i = 0 ;
-		while(i<v1){
-			i++;
-			sum = sum*i;
-			
+		for(int i = 1;;i++){
+			if(Math.pow(10,i)>v1){
+				sum = i;
+				break;
+			}
 		}
-		System.out.println(sum);
+		System.out.print(sum + "位數");
 
 	}
 
